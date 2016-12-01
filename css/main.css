@@ -12,11 +12,6 @@ html {
 
 a {
   color: #568c36;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #113c00;
 }
 
 .max-length {
@@ -30,13 +25,13 @@ a:hover {
   color: #fff;
 }
 
-.nav {
+nav {
   position: relative;
   background-color: #113c00;
   z-index: 2;
 }
 
-.nav a {
+nav a {
   display: inline-block;
   padding: .5rem .75rem;
 
@@ -44,16 +39,20 @@ a:hover {
   text-decoration: none;
 }
 
-.nav a:hover {
+a:hover, a:focus {
+  color: #113c00;
+}
+
+nav a:hover, nav a:focus {
   background-color: #fff;
   color: #113c00;
 }
 
-.about {
+.banner {
   position: relative;
 }
 
-.about-content {
+.banner-content {
   background-color: #113c00;
   color: #fff;
 }
@@ -87,14 +86,14 @@ td {
   border-color: #568c36;
 }
 
-.footer {
+footer {
   background-color: #113c00;
   color: #fff;
 }
 
 @media only screen and (min-width: 35em) {
 
-  .about-content {
+  .banner-content {
     bottom: 0;
     position: absolute;
     width: 100%;
